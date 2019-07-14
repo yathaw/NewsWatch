@@ -16,6 +16,12 @@
     <color name="material_teal"> #00BFA5 </color>
     <color name="material_green"> #00C853 </color>
 
+    <color name="gradient_start"> #FFD027 </color>
+    <color name="gradient_end"> #FD9A28  </color>
+
+    <color name="back"> #304ffe </color>
+    <color name="Wheat">#ffffff</color>
+
 
     <color name="colorTextSubtitle">#4e4e4e</color>
     <color name="colorTextTitle">#262626</color>
