@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/background_color"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/topheadlines_framelayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin">
+
+                        <TextView
+                            android:id="@+id/topheadlines_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Top Headlines"
+                            android:fontFamily="@font/notosansc_black"
+                            android:textSize="22sp"
+                            android:visibility="invisible"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            />
+
+                        <View
+                            android:id="@+id/topheadlines_start_divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#E5E5E5"
+                            android:layout_below="@+id/topheadlines_title"
+                            android:layout_marginTop="3dp"
+                            android:visibility="invisible"
+                            android:layout_marginBottom="5dp"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/topheadlines_recyclerView"
+                            android:scrollbars="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/topheadlines_start_divider"
+                            >
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

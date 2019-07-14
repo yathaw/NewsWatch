@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:id="@+id/cardview">
+
+    <ImageView
+        android:id="@+id/category_logo"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/business"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Business"
+        android:textSize="20sp"
+        android:fontFamily="@font/notosansc_medium"
+        app:layout_constraintStart_toEndOf="@id/category_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="4dp"
+        android:paddingLeft="120dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
