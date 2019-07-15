@@ -189,6 +189,8 @@ public class TopheadlinesFragment extends Fragment implements SwipeRefreshLayout
                 intent.putExtra("source",articlesItem.getSource().getName());
                 intent.putExtra("author",articlesItem.getAuthor());
 
+                startActivity(intent);
+
             }
         });
     }
