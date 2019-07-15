@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.newswatch">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,12 +11,24 @@
         android:roundIcon="@drawable/newswatch"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WelcomeActivity"
+        <activity
+            android:name=".WelcomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="androidapp.yathawmyatnoe.com"
+                    android:pathPattern="/newsapp" />
             </intent-filter>
         </activity>
         <activity
@@ -29,7 +41,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CategoryNewsActivity"></activity>
-        <activity android:name=".NewsDetailActivity"
+        <activity
+            android:name=".NewsDetailActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

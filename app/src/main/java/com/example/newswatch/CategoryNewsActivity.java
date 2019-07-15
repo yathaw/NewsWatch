@@ -114,17 +114,17 @@ public class CategoryNewsActivity extends AppCompatActivity implements SwipeRefr
             call = apiInterface.getCategory(country, "entertainment",API_KEY);
         }
 
-        if (appbarTitle.matches("Health"))
+        else if (appbarTitle.matches("Health"))
         {
             call = apiInterface.getCategory(country, "health",API_KEY);
         }
 
-        if (appbarTitle.matches("Science"))
+        else if (appbarTitle.matches("Science"))
         {
             call = apiInterface.getCategory(country, "science",API_KEY);
         }
 
-        if (appbarTitle.matches("Sports"))
+        else if (appbarTitle.matches("Sports"))
         {
             call = apiInterface.getCategory(country, "sports",API_KEY);
         }

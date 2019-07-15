@@ -48,7 +48,7 @@
 
         <TextView
             android:id="@+id/category_news_title"
-            android:layout_width="250dp"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:text="Makers Of Horror Game That Was Removed From Steam Say It's Not Coming Back Anytime Soon - Kotaku"
             android:textSize="12sp"
@@ -72,6 +72,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="15dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/category_news_title"
             />
 
         <ImageView
@@ -82,8 +84,10 @@
             android:src="@drawable/bottom_shadow"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/category_news_title"/>
 
         <ProgressBar
             android:id="@+id/progress_load_photo"
@@ -94,6 +98,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="15dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/category_news_title"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
