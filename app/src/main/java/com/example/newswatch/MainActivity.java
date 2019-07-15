@@ -68,6 +68,10 @@ public class MainActivity extends AppCompatActivity
         BottomNavigationView navView = findViewById(R.id.nav_view);
         mTextMessage = findViewById(R.id.message);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.content_frame, new TopheadlinesFragment());
+        fragmentTransaction.commit();
     }
 
 }

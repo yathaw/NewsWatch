@@ -70,7 +70,7 @@ public class ApiClient
              builder.hostnameVerifier(new HostnameVerifier() {
                  @Override
                  public boolean verify(String hostname, SSLSession session) {
-                     return false;
+                     return true;
                  }
              });
 

@@ -2,6 +2,7 @@ package com.example.newswatch.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -91,6 +92,8 @@ public class TopheadlineAdapter extends RecyclerView.Adapter<TopheadlineAdapter.
         myViewHolder.title.setText(model.getTitle());
         myViewHolder.author.setText(model.getSource().getName());
         myViewHolder.time.setText(Utils.DateToTimeFormat(model.getPublishedAt()));
+
+        Log.d("topheadline", model.getTitle());
     }
 
     @Override
