@@ -1,5 +1,6 @@
 package com.example.newswatch.api;
 
+import com.example.newswatch.models.categorynews.Categorynews;
 import com.example.newswatch.models.topheadline.News;
 
 import retrofit2.Call;
@@ -13,4 +14,13 @@ public interface ApiInterface
             @Query("country") String country,
             @Query("apiKey") String apiKey
     );
+
+    @GET("top-headlines")
+    Call<Categorynews> getCategory (
+            @Query("country") String country,
+            @Query("category") String category,
+            @Query("apiKey") String apiKey
+    );
+
+
 }

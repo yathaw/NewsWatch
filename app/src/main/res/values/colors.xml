@@ -28,4 +28,6 @@
 
     <color name="background_color"> #fcfcfc </color>
 
+    <color name="category_title"> #1A237E </color>
+
 </resources>

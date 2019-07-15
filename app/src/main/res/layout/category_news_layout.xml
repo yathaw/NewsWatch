@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="11dp"
+    android:layout_marginRight="11dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="7dp"
+    android:minHeight="110dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/container">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/category_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kotaku.com"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/notosansc_medium"
+            android:textColor="@color/material_blue"
+            />
+
+        <TextView
+            android:id="@+id/category_news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 min"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/category_author"
+            app:layout_constraintBaseline_toBaselineOf="@id/category_author"
+            android:layout_marginStart="30dp"
+            android:ellipsize="end"
+            />
+
+
+        <TextView
+            android:id="@+id/category_news_title"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Makers Of Horror Game That Was Removed From Steam Say It's Not Coming Back Anytime Soon - Kotaku"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category_news_date"
+            android:textColor="@color/category_title"
+            android:ellipsize="end"
+            android:maxLines="3"
+            />
+
+
+        <ImageView
+            android:id="@+id/category_news_img"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/shadow_bottom"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/img"
+            android:src="@drawable/bottom_shadow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_load_photo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/category_news_img"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

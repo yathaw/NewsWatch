@@ -83,7 +83,7 @@ public class NewsDetailActivity extends AppCompatActivity implements AppBarLayou
                 .into(imageView);
 
         appbar_title.setText(mSource);
-        appbar_title.setText(mUrl);
+        appbar_subtitle.setText(mUrl);
         date.setText(Utils.DateFormat(mDate));
         title.setText(mTitle);
 

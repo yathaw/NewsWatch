@@ -21,7 +21,7 @@
         <ImageView
             android:id="@+id/img"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="240dp"
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"
             />
@@ -81,11 +81,8 @@
             android:layout_marginRight="160dp"
             android:layout_marginBottom="10dp"
             android:maxLines="1"
-            android:drawablePadding="10dp"
             android:singleLine="true"
-            android:ellipsize="end"
             android:text="Time"
-            android:fontFamily="@font/notosansc_light"
             android:textSize="12sp"
             android:layout_marginLeft="16dp"/>
 
